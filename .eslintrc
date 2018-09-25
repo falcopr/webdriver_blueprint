@@ -1,0 +1,35 @@
+{
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "plugins": [
+      "jasmine",
+      "webdriverio"
+    ],
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "sourceType": "module",
+    "rules": {
+      "strict": 0
+    }
+  },
+  "rules": {
+    "one-var": "off",
+    "no-unused-vars": "warn",
+    "no-return-assign": "warn",
+    "space-before-function-paren": "off",
+    "no-console": "off"
+  },
+  "globals": {
+    "window": true,
+    "console": true,
+    "require": true,
+    "process": true,
+    "exports": true
+  },
+  "env": {
+    "jasmine": true,
+    "webdriverio/wdio": true
+  }
+}

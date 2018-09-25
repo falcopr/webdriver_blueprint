@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "es6",
+    "baseUrl": "src",
+    "checkJs": false
+  },
+  "include": [
+    "src/**/*",
+    "node_modules/@types/**/*"
+  ],
+  "exclude": [
+  ],
+  "typeAcquisition": {
+    "enable": true
+  }
+}
