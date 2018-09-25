@@ -1,0 +1,21 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Webdriver",
+      "type": "node",
+      "request": "launch",
+      "protocol": "inspector",
+      "address": "127.0.0.1",
+      "port": 5859,
+      "timeout": 20000,
+      "runtimeArgs": ["--experimental-modules"],
+      "program": "${workspaceRoot}/src/start.mjs",
+      "cwd": "${workspaceRoot}",
+      "args": ["-debug"]
+    }
+  ]
+}

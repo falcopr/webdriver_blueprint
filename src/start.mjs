@@ -1,6 +1,22 @@
 
 import webdriverio from 'webdriverio';
-let wdio = new webdriverio.Launcher('./src/wdio.conf.js');
+import yargs from 'yargs';
+
+yargs
+  .option('debug', {
+    alias: 'd',
+    default: false
+  });
+
+let shouldDebug = yargs.argv.debug;
+let overriddenOptions = {};
+
+if (shouldDebug) {
+  overriddenOptions.debug = true;
+  overriddenOptions.execArgv = ['--inspect-brk=127.0.0.1:5859'];
+}
+
+let wdio = new webdriverio.Launcher('./src/wdio.conf.js', overriddenOptions);
 
 (async () => {
   try {

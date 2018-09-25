@@ -6,6 +6,7 @@
   "scripts": {
     "preinstall-globals": "npm install --global --production windows-build-tools",
     "start": "node --experimental-modules src/start.mjs",
+    "debug": "node --experimental-modules src/start.mjs -debug",
     "selenium": "java \"-Dwebdriver.gecko.driver=./bin/geckodriver-v0.22.0-win64/geckodriver.exe\" -jar ./bin/selenium-server-standalone-3.14.0.jar -port 5555",
     "report": ".\\node_modules\\.bin\\allure generate ./allure-results -o ./allure-reports"
   },
@@ -31,12 +32,17 @@
     "webdriverio": "^4.13.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
     "eslint": "^5.6.0",
     "eslint-plugin-jasmine": "^2.10.1",
     "eslint-plugin-webdriverio": "^1.0.1",
     "wdio-allure-reporter": "^0.7.0",
     "wdio-dot-reporter": "0.0.10",
     "wdio-jasmine-framework": "^0.3.6",
-    "wdio-spec-reporter": "^0.1.5"
+    "wdio-spec-reporter": "^0.1.5",
+    "yargs": "^12.0.2"
   }
 }
