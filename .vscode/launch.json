@@ -5,6 +5,15 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Run Webdriver",
+      "type": "node",
+      "request": "launch",
+      "timeout": 20000,
+      "runtimeArgs": ["--experimental-modules"],
+      "program": "${workspaceRoot}/src/start.mjs",
+      "cwd": "${workspaceRoot}"
+    },
+    {
       "name": "Debug Webdriver",
       "type": "node",
       "request": "launch",
