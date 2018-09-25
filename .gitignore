@@ -1,7 +1,8 @@
 # Allure
 allure-reports
 allure-results
-errorShots
+errorshots
+screenshots
 
 # Logs
 logs

@@ -1,13 +1,13 @@
 export class Google {
-  constructor(browser) {
-    this.browser = browser;
-  }
-
   async to() {
-    return await this.browser.url('http://www.google.com');
+    return await browser.url('http://www.google.com');
   }
 
   async getTitle() {
-    return await this.browser.getTitle();
+    return await browser.getTitle();
+  }
+
+  async doScreenshot() {
+    return await browser.saveScreenshot('./screenshots/Google_Title.png');
   }
 }

@@ -5,10 +5,10 @@
   "main": "src/start.mjs",
   "scripts": {
     "preinstall-globals": "npm install --global --production windows-build-tools",
-    "start": "node --experimental-modules src/start.mjs",
-    "debug": "node --experimental-modules src/start.mjs -debug",
-    "selenium": "java \"-Dwebdriver.gecko.driver=./bin/geckodriver-v0.22.0-win64/geckodriver.exe\" -jar ./bin/selenium-server-standalone-3.14.0.jar -port 5555",
-    "report": ".\\node_modules\\.bin\\allure generate ./allure-results -o ./allure-reports"
+    "start": "node src/start.js",
+    "debug": "node src/start.js -debug",
+    "selenium": "java \"-Dwebdriver.gecko.driver=./bin/geckodriver-v0.22.0-win64/geckodriver.exe\" \"-Dwebdriver.chrome.driver=./bin/chromedriver-v2.42_win32/chromedriver.exe\" \"-Dwebdriver.ie.driver=./bin/IEDriverServer_x64_3.14.0/IEDriverServer.exe\" -jar ./bin/selenium-server-standalone-3.14.0.jar -port 5555",
+    "report": ".\\node_modules\\.bin\\allure generate ./allure-results -o ./allure-reports --clean"
   },
   "repository": {
     "type": "git",
