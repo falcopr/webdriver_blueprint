@@ -54,18 +54,20 @@ exports.config = {
     maxInstances: 5,
     //
     browserName: 'firefox'
-  }, {
-    maxInstances: 5,
-    //
-    browserName: 'chrome'
-  }, 
-  {
-    maxInstances: 5,
-    //
-    browserName: 'internet explorer'
-    //
-    // version: '11'
-  }],
+  }
+  // , {
+  //   maxInstances: 5,
+  //   //
+  //   browserName: 'chrome'
+  // }, 
+  // {
+  //   maxInstances: 5,
+  //   //
+  //   browserName: 'internet explorer'
+  //   //
+  //   // version: '11'
+  // }
+  ],
   //
   // ===================
   // Test Configurations
@@ -78,7 +80,7 @@ exports.config = {
   sync: false,
   //
   // Level of logging verbosity: silent | verbose | command | data | result | error
-  logLevel: 'silent',
+  logLevel: 'verbose',
   //
   // Enables colors for log output.
   coloredLogs: true,
@@ -100,7 +102,7 @@ exports.config = {
   baseUrl: 'http://localhost',
   //
   // Default timeout for all waitFor* commands.
-  waitforTimeout: 10000,
+  waitforTimeout: 20000,
   //
   // Default timeout in milliseconds for request
   // if Selenium Grid doesn't send response
@@ -143,14 +145,14 @@ exports.config = {
   // Test reporter for stdout.
   // The only one supported by default is 'dot'
   // see also: http://webdriver.io/guide/reporters/dot.html
-  reporters: ['dot', 'spec', 'allure'],
+  reporters: ['spec', 'allure'],
 
   //
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
     //
     // Jasmine default timeout
-    defaultTimeoutInterval: 10000,
+    defaultTimeoutInterval: 30000,
     //
     // The Jasmine framework allows interception of each assertion in order to log the state of the application
     // or website depending on the result. For example, it is pretty handy to take a screenshot every time

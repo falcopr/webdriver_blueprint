@@ -14,6 +14,7 @@ let overriddenOptions = {};
 if (shouldDebug) {
   overriddenOptions.debug = true;
   overriddenOptions.execArgv = ['--inspect-brk=127.0.0.1:5859'];
+  // overriddenOptions.execArgv = ['--inspect=127.0.0.1:5859'];
 }
 
 let wdio = new webdriverio.Launcher('./src/wdio.conf.js', overriddenOptions);

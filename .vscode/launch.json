@@ -9,8 +9,7 @@
       "type": "node",
       "request": "launch",
       "timeout": 20000,
-      "runtimeArgs": ["--experimental-modules"],
-      "program": "${workspaceRoot}/src/start.mjs",
+      "program": "${workspaceRoot}/src/start.js",
       "cwd": "${workspaceRoot}"
     },
     {
@@ -21,8 +20,7 @@
       "address": "127.0.0.1",
       "port": 5859,
       "timeout": 20000,
-      "runtimeArgs": ["--experimental-modules"],
-      "program": "${workspaceRoot}/src/start.mjs",
+      "program": "${workspaceRoot}/src/start.js",
       "cwd": "${workspaceRoot}",
       "args": ["-debug"]
     }
