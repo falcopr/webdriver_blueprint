@@ -1,10 +1,10 @@
 {
-  "name": "webdriver_protractor_showcase",
+  "name": "webdriver_showcase",
   "version": "1.0.0",
-  "description": "Showcasing webdriver usage with protractor",
-  "main": "src/start.mjs",
+  "description": "Showcasing webdriver usage without protractor",
+  "main": "src/start.js",
   "scripts": {
-    "preinstall-globals": "npm install --global --production windows-build-tools",
+    "preinstall": "npm install --global --production windows-build-tools",
     "start": "node src/start.js",
     "debug": "node src/start.js -debug",
     "selenium": "java \"-Dwebdriver.gecko.driver=./bin/geckodriver-v0.22.0-win64/geckodriver.exe\" \"-Dwebdriver.chrome.driver=./bin/chromedriver-v2.42_win32/chromedriver.exe\" \"-Dwebdriver.ie.driver=./bin/IEDriverServer_x64_3.14.0/IEDriverServer.exe\" -jar ./bin/selenium-server-standalone-3.14.0.jar -port 5555",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/falcoprescher/webdriver_protractor_showcase.git"
+    "url": "git+https://github.com/falcoprescher/webdriver_showcase.git"
   },
   "keywords": [
     "Protractor",
@@ -24,9 +24,9 @@
   "author": "Falco Prescher",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/falcoprescher/webdriver_protractor_showcase/issues"
+    "url": "https://github.com/falcoprescher/webdriver_showcase/issues"
   },
-  "homepage": "https://github.com/falcoprescher/webdriver_protractor_showcase#readme",
+  "homepage": "https://github.com/falcoprescher/webdriver_showcase#readme",
   "dependencies": {
     "allure-commandline": "^2.7.0",
     "jasmine": "^3.2.0",
@@ -34,7 +34,6 @@
     "lodash": "^4.17.11",
     "moment": "^2.22.2",
     "numeral": "^2.0.6",
-    "protractor": "^5.4.1",
     "webdriverio": "^4.13.2"
   },
   "devDependencies": {
