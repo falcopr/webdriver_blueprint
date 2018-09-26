@@ -23,8 +23,9 @@ The unit tests are located in the **/spec** folder. By file naming convention ea
 
 # Prerequisites
 * Install Node.js 10+
-* Windows 7 with Powershell 2+
-* Locale administration permissions
+* Visual Studio Code
+* Windows 7+ with Powershell 2+
+* Local administration permissions
 * Java JRE 1.8+
 * Firefox 62+, Chrome 69+ or Internet Explorer 11
 
