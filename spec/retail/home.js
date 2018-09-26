@@ -25,16 +25,18 @@ export class QuickSearchBox {
 
   async scrollToAssetBmw() {
     await browser.waitForVisible('div.assetDropDownListAutoWidth');
-    return await browser.executeAsync(() => {
+    browser.execute(() => {
       $('.assetDropDownListAutoWidth .k-virtual-content')[0].scrollTop = 2600;
     });
+    return await wait(1000);
   }
 
   async clickAssetBmw() {
-    // return await browser.click(`asset-drop-down-list li*=${name}`)
-    // return await browser.click(`asset-drop-down-list li=${name}`)
     await browser.waitForVisible('div.assetDropDownListAutoWidth');
     return await browser.element('div.assetDropDownListAutoWidth').element('li*=BMW').click()
-    // return await browser.click(`//div[contains(@class, 'assetDropDownListAutoWidth')]//li[.='BMW']`);
+  }
+
+  async getAssetScore() {
+    return await browser.element('div.shortcode-quick-search-box').element('div.value > lightstreamer-ticker-indication > span').getText();
   }
 }

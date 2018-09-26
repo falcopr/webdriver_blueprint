@@ -1,4 +1,6 @@
 import { Home, QuickSearchBox } from './home';
+import numeral from 'numeral';
+import 'numeral/locales/de';
 
 describe('Retail Home', () => {
   it('when choosing asset BMW on quick search box reload box', async () => {
@@ -12,6 +14,11 @@ describe('Retail Home', () => {
     await home.doScreenshot('quicksearchbox_scrolled');
     await quickSearchBox.clickAssetBmw();
     await home.doScreenshot('quicksearchbox_asset_BMW_clicked');
-    expect(title).toBe('Home - Derivate');
+    
+    numeral.locale('de')
+    let bmwScoreAsText = await quickSearchBox.getAssetScore();
+    let bmwScore = numeral(bmwScoreAsText).value();
+    expect(bmwScore).toBeGreaterThan(60, `The current BMW score is actually ${bmwScoreAsText} ${bmwScore}`);
+    expect(bmwScore).toBeLessThan(100, `The current BMW score is actually ${bmwScoreAsText} ${bmwScore}`);
   });
 });

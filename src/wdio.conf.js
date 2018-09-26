@@ -80,7 +80,7 @@ exports.config = {
   sync: false,
   //
   // Level of logging verbosity: silent | verbose | command | data | result | error
-  logLevel: 'verbose',
+  logLevel: 'silent',
   //
   // Enables colors for log output.
   coloredLogs: true,
@@ -152,7 +152,7 @@ exports.config = {
   jasmineNodeOpts: {
     //
     // Jasmine default timeout
-    defaultTimeoutInterval: 30000,
+    defaultTimeoutInterval: 20000,
     //
     // The Jasmine framework allows interception of each assertion in order to log the state of the application
     // or website depending on the result. For example, it is pretty handy to take a screenshot every time
