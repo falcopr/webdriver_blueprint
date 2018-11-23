@@ -1,10 +1,10 @@
 {
-  "extends": "eslint:recommended",
+  "extends": "plugin:wdio/recommended",
   "parserOptions": {
     "ecmaVersion": 9,
     "plugins": [
       "jasmine",
-      "webdriverio"
+      "wdio"
     ],
     "ecmaFeatures": {
       "modules": true
@@ -29,7 +29,6 @@
     "exports": true
   },
   "env": {
-    "jasmine": true,
-    "webdriverio/wdio": true
+    "jasmine": true
   }
 }
