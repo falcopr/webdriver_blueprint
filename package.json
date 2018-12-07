@@ -1,7 +1,7 @@
 {
-  "name": "webdriver_showcase",
+  "name": "webdriver_blueprint",
   "version": "1.0.0",
-  "description": "Showcasing webdriver usage without protractor",
+  "description": "WebdriverIO blueprint",
   "main": "src/start.js",
   "scripts": {
     "preinstall": "npm install --global --production windows-build-tools",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/falcoprescher/webdriver_showcase.git"
+    "url": "git+https://github.com/falcoprescher/webdriver_blueprint.git"
   },
   "keywords": [
     "Protractor",
@@ -24,9 +24,9 @@
   "author": "Falco Prescher",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/falcoprescher/webdriver_showcase/issues"
+    "url": "https://github.com/falcoprescher/webdriver_blueprint/issues"
   },
-  "homepage": "https://github.com/falcoprescher/webdriver_showcase#readme",
+  "homepage": "https://github.com/falcoprescher/webdriver_blueprint#readme",
   "dependencies": {
     "allure-commandline": "^2.7.0",
     "jasmine": "^3.2.0",
