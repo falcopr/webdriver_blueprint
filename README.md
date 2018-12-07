@@ -1,5 +1,6 @@
-# Webdriver Showcase
-Showcase of how webdriver can be used on Angular applications without Protractor
+# Webdriver Blueprint
+A blueprint for a webdriver project.
+This project was initially a showcase of how webdriver can be used on Angular applications without Protractor.
 
 # In General
 This repositories consists of a blueprint of basic a basic WebdriverIO application with Selenium setup and a lot of preconfiguration. This project was originally created to check if Protractor can run as a library/enhancement with WebdriverIO. This was sadly not possible in a good and maintainable way. That is why this repostory shows that protractor is not needed in order to test applications including also Angular.
